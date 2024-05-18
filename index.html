@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Đèn Đường Thông Minh</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#"><img src="image/logo2.png" alt=""></a>
+            <li><a href="#">HỆ THỐNG ĐÈN ĐƯỜNG THÔNG MINH</a></li>
+        </header>
+        <nav>
+            <div class="Menu">
+                <ul>
+                   <li><a href="#">GIAO DIỆN</a></li>
+                   <li><a href="#">GIỚI THIỆU</a></li>
+                   <li><a href="#">HÌNH ẢNH</a></li>
+                   <li><a href="#">TIN TỨC</a></li>
+                </ul>
+            </div>
+            <div class="Others">
+                    <input type="search" placeholder="Search...">
+                    <button>Tìm Kiếm</button>
+            </div>
+        </nav>
+        <div id="slide">
+            <a href=""><img src= "image/denduong1.png" alt=""  id ="responsive-img"></a>
+            </div>
+       </div>
+        <style>
+            :root {
+                --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66) .3s;
+            }
+            body{
+                background: #8ec0f2;
+                transition: var(--transition-effect);
+            }
+            body.dark {
+                background: burlywood;
+            }
+            #wrapper{
+                display: flex;
+                justify-content:center;
+                align-items:center;
+                min-height: 1vh;
+            }
+            .switch-toggle {
+                width: 90px;
+                height: 50px;
+                top: 82%;
+                left: 25%;
+                appearance: none;
+                background: #666666;
+                border-radius: 26px;
+                position:absolute;
+                cursor: pointer;
+                box-shadow: inset 0px 0px 16px rgb(0, 0, 0, .3);
+                transition: var(--transition-effect);
+            }
+            .switch-toggle::before {
+                content:"";
+                width: 44px;
+                height: 44px;
+                position: absolute;
+                top: 3px;
+                left: 3px;
+                background: #efe2bf;
+                border-radius: 50%;
+                box-shadow: 0px 0px 6px rgb(0, 0, 0, .3);
+                transition: var(--transition-effect);
+            }
+            .switch-toggle:checked {
+                background: #bf005f;
+            }
+            .switch-toggle:checked:before{
+                left: 40px;
+            }
+            @media screen and (max-width:600px) {
+                .switch-toggle {
+                    top:96%;
+                    left:35%;
+                }
+            }
+        </style>
+        <div id="wrapper">
+            <input type="checkbox" name="" class="switch-toggle" id="light-dark">
+        </div>
+       <style>
+        :root {
+            --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66) .3s;
+        }
+        body{
+            background: #8ec0f2;
+            transition: var(--transition-effect);
+        }
+        body.dark1 {
+            background: burlywood;
+        }
+        #wrapper1{
+            display: flex;
+            justify-content: right;
+            align-items:center;
+            min-height: 1vh;
+        }
+        .switch-toggle1 {
+            width: 90px;
+            height: 50px;
+            top: 82%;
+            left: 62%;
+            appearance: none;
+            background: #666666;
+            border-radius: 26px;
+            position:absolute;
+            cursor: pointer;
+            box-shadow: inset 0px 0px 16px rgb(0, 0, 0, .3);
+            transition: var(--transition-effect);
+        }
+        .switch-toggle1::before {
+            content:"";
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            background: #efe2bf;
+            border-radius: 50%;
+            box-shadow: 0px 0px 6px rgb(0, 0, 0, .3);
+            transition: var(--transition-effect);
+        }
+        .switch-toggle1:checked {
+            background: #bf005f;
+        }
+        .switch-toggle1:checked:before{
+            left: 40px;
+        }
+        @media screen and (max-width:600px) {
+                .switch-toggle1 {
+                    top:97%;
+                    left:118%;
+                }
+            }
+    </style>
+    <div id="wrapper1">
+        <input type="checkbox" name="" class="switch-toggle1" id="light-dark1">
+    </div>
+    <article>
+        <div class="new_list">
+            <h3>TẤT CẢ ĐÈN</h3>
+            <h4>ON</h4>
+            <h5>OFF</h5>
+        </div>
+    </article>
+    <article>
+        <div class="new_list1">
+            <h3>CHẾ ĐỘ</h3>
+            <h4>NHÂN CÔNG</h4>
+            <h5>TỰ ĐỘNG</h5>
+        </div>
+    </article>
+    <article>
+        <main class="table">
+            <section class="table_header">
+                <h1>BẢNG ĐIỀU KHIỂN</h1>
+            </section>
+            <section class="table_body">
+                <table boder="1">
+                    <thead>
+                        <tr>
+                            <th>ĐÈN</th>
+                            <th></th>
+                            <th>NÚT BẤM</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ĐÈN 1</td>
+                            <td class="alignR">OFF</td>
+                            <td> <style>
+                                :root {
+                                    --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66) .3s;
+                                }
+                                body{
+                                    background: #8ec0f2;
+                                    transition: var(--transition-effect);
+                                }
+                                body.dark2 {
+                                    background: burlywood;
+                                }
+                                #wrapper2{
+                                    display: flex;
+                                    justify-content: right;
+                                    align-items:center;
+                                    min-height: 1vh;
+                                }
+                                .switch-toggle2 {
+                                    width: 90px;
+                                    height: 50px;    
+                                    appearance: none;
+                                    background: #666666;
+                                    border-radius: 26px;
+                                    position:relative;
+                                    cursor: pointer;
+                                    box-shadow: inset 0px 0px 16px rgb(0, 0, 0, .3);
+                                    transition: var(--transition-effect);
+                                }
+                                .switch-toggle2::before {
+                                    content:"";
+                                    width: 44px;
+                                    height: 44px;
+                                    position: absolute;
+                                    top: 3px;
+                                    left: 3px;
+                                    background: #efe2bf;
+                                    border-radius: 50%;
+                                    box-shadow: 0px 0px 6px rgb(0, 0, 0, .3);
+                                    transition: var(--transition-effect);
+                                }
+                                .switch-toggle2:checked {
+                                    background: #bf005f;
+                                }
+                                .switch-toggle2:checked:before{
+                                    left: 40px;
+                                }
+                            </style>
+                            <div id="wrapper2">
+                                <input type="checkbox" name="" class="switch-toggle2" id="light-dark2">
+                            </div>
+                            </td>
+                             <td>ON</td>
+                        </tr>
+                        <tr>
+                            <td>ĐÈN 2</td>
+                            <td>OFF</td>
+                            <td> <style>
+                                    :root {
+                                        --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66) .3s;
+                                    }
+                                    body{
+                                        background: #8ec0f2;
+                                        transition: var(--transition-effect);
+                                    }
+                                    body.dark3 {
+                                        background: burlywood;
+                                    }
+                                    #wrapper3{
+                                        display: flex;
+                                        justify-content: right;
+                                        align-items:center;
+                                        min-height: 1vh;
+                                    }
+                                    .switch-toggle3 {
+                                        width: 90px;
+                                        height: 50px;    
+                                        appearance: none;
+                                        background: #666666;
+                                        border-radius: 26px;
+                                        position:relative;
+                                        cursor: pointer;
+                                        box-shadow: inset 0px 0px 16px rgb(0, 0, 0, .3);
+                                        transition: var(--transition-effect);
+                                    }
+                                    .switch-toggle3::before {
+                                        content:"";
+                                        width: 44px;
+                                        height: 44px;
+                                        position: absolute;
+                                        top: 3px;
+                                        left: 3px;
+                                        background: #efe2bf;
+                                        border-radius: 50%;
+                                        box-shadow: 0px 0px 6px rgb(0, 0, 0, .3);
+                                        transition: var(--transition-effect);
+                                    }
+                                    .switch-toggle3:checked {
+                                        background: #bf005f;
+                                    }
+                                    .switch-toggle3:checked:before{
+                                        left: 40px;
+                                    }
+                                </style>
+                                <div id="wrapper3">
+                                    <input type="checkbox" name="" class="switch-toggle3" id="light-dark3">
+                                </div>
+                                </td>
+                                 <td>ON</td>
+                        </tr>
+                        <tr>
+                            <td>ĐÈN 3</td>
+                            <td>OFF</td>
+                                <td> <style>
+                                    :root {
+                                        --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66) .3s;
+                                    }
+                                    body{
+                                        background: #8ec0f2;
+                                        transition: var(--transition-effect);
+                                    }
+                                    body.dark4 {
+                                        background: burlywood;
+                                    }
+                                    #wrapper4{
+                                        display: flex;
+                                        justify-content: right;
+                                        align-items:center;
+                                        min-height: 1vh;
+                                    }
+                                    .switch-toggle4 {
+                                        width: 90px;
+                                        height: 50px;    
+                                        appearance: none;
+                                        background: #666666;
+                                        border-radius: 26px;
+                                        position:relative;
+                                        cursor: pointer;
+                                        box-shadow: inset 0px 0px 16px rgb(0, 0, 0, .3);
+                                        transition: var(--transition-effect);
+                                    }
+                                    .switch-toggle4::before {
+                                        content:"";
+                                        width: 44px;
+                                        height: 44px;
+                                        position: absolute;
+                                        top: 3px;
+                                        left: 3px;
+                                        background: #efe2bf;
+                                        border-radius: 50%;
+                                        box-shadow: 0px 0px 6px rgb(0, 0, 0, .3);
+                                        transition: var(--transition-effect);
+                                    }
+                                    .switch-toggle4:checked {
+                                        background: #bf005f;
+                                    }
+                                    .switch-toggle4:checked:before{
+                                        left: 40px;
+                                    }
+                                </style>
+                                <div id="wrapper4">
+                                    <input type="checkbox" name="" class="switch-toggle4" id="light-dark4">
+                                </div>
+                                </td>
+                                 <td>ON</td>
+                        </tr>
+                        <tr>
+                            <td>ĐÈN 4</td>
+                            <td>OFF</td>
+                                <td> <style>
+                                    :root {
+                                        --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66) .3s;
+                                    }
+                                    body{
+                                        background: #8ec0f2;
+                                        transition: var(--transition-effect);
+                                    }
+                                    body.dark5 {
+                                        background: burlywood;
+                                    }
+                                    #wrapper5{
+                                        display: flex;
+                                        justify-content: right;
+                                        align-items:center;
+                                        min-height: 1vh;
+                                    }
+                                    .switch-toggle5 {
+                                        width: 90px;
+                                        height: 50px;    
+                                        appearance: none;
+                                        background: #666666;
+                                        border-radius: 26px;
+                                        position:relative;
+                                        cursor: pointer;
+                                        box-shadow: inset 0px 0px 16px rgb(0, 0, 0, .3);
+                                        transition: var(--transition-effect);
+                                    }
+                                    .switch-toggle5::before {
+                                        content:"";
+                                        width: 44px;
+                                        height: 44px;
+                                        position: absolute;
+                                        top: 3px;
+                                        left: 3px;
+                                        background: #efe2bf;
+                                        border-radius: 50%;
+                                        box-shadow: 0px 0px 6px rgb(0, 0, 0, .3);
+                                        transition: var(--transition-effect);
+                                    }
+                                    .switch-toggle5:checked {
+                                        background: #bf005f;
+                                    }
+                                    .switch-toggle5:checked:before{
+                                        left: 40px;
+                                    }
+                                </style>
+                                <div id="wrapper5">
+                                    <input type="checkbox" name="" class="switch-toggle5" id="light-dark5">
+                                </div>
+                                </td>
+                                 <td>ON</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </article>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script>
+        var Led =[0, 0, 0, 0], allLed=0, checkall = 0, checktime=[0, 0, 0, 0, 0], time=[0, 0, 0, 0, 0];
+        var Auto = 1;
+         var checkbox_toggle = document.getElementById('light-dark1');
+         var client = mqtt.connect("wss://f5ea15390c3e435a9f80a6a22bbca798.s1.eu.hivemq.cloud:8884/mqtt", {
+        username: "tranghttp",
+        password: "Trangvu1203"
+    });
+    console.log(checkbox_toggle = document.getElementById('light-dark1').checked)
+    client.subscribe("CBQuang");
+    client.subscribe("Receive");
+    client.on("message", function(topic, message, length) {
+        if (topic === "Control") {
+            var payload = message.toString();
+            // Update button state based on MQTT payload
+            updateButtonState(payload);
+        }
+        if (topic == "CBQuang" && Auto==1) {
+            var payload = Number(message.toString());
+            console.log(payload);
+            // Update button state based on MQTT payload
+            if(payload==1){
+               document.body.classList.add('dark1');
+            }else{
+                document.body.classList.remove('dark1');
+            }
+        }
+        if(topic=="Receive"){
+            var payload = message.toString();
+            var sum=0;
+            for(var i=0;i<=3;i++){
+                Led[i] = Number(payload[i]);
+                sum+=Led[i];
+            }
+            if(checktime[4] == 0){
+                if(sum==4 && checkall==0){
+                    checkall=1;
+                    document.getElementById('light-dark').checked=true;
+                }
+                else if(sum<4){
+                    checkall=0;
+                    document.getElementById('light-dark').checked=false;
+                }
+            }
+
+            if(checktime[0] == 0){
+                if(Led[0]==1){
+                document.getElementById("light-dark2").checked=true;
+                }
+                else{
+                    document.getElementById("light-dark2").checked=false;
+                }      
+            }
+            if(checktime[1] == 0){
+                if(Led[1]==1){
+                document.getElementById("light-dark3").checked=true;
+                }
+                else{
+                    document.getElementById("light-dark3").checked=false;
+                }
+            }
+            if(checktime[2] == 0){
+                if(Led[2]==1){
+                    document.getElementById("light-dark4").checked=true;
+                }
+                else{
+                    document.getElementById("light-dark4").checked=false;
+                }
+            }
+            if(checktime[3] == 0){
+                if(Led[3]==1){
+                    document.getElementById("light-dark5").checked=true;
+                }
+                else{
+                    document.getElementById("light-dark5").checked=false;
+                }
+            }
+        }
+    });
+
+    // function updateButtonState(payload) {
+    //     if (payload == "1") {
+    //         checkbox_toggle.checked = true;
+    //         document.body.classList.add('dark1');
+    //     } else if (payload === "0") {
+    //         checkbox_toggle.checked = false;
+    //         document.body.classList.remove('dark1');
+    //     }
+    // }
+    var checkbox_toggle = document.getElementById('light-dark');
+    console.log(checkbox_toggle);
+    checkbox_toggle.addEventListener('change', function (){
+        // checktime[4] = 1;
+        if(checkbox_toggle.checked){
+            console.log("Pressed button")
+            client.publish("AllLed", "1");
+            checkbox_toggle2.checked=true;
+            checkbox_toggle3.checked=true;
+            checkbox_toggle4.checked=true;
+            checkbox_toggle5.checked=true;
+        }else{
+            console.log("unpress")
+            client.publish("AllLed", "0");
+            checkbox_toggle2.checked=false;
+            checkbox_toggle3.checked=false;
+            checkbox_toggle4.checked=false;
+            checkbox_toggle5.checked=false;
+        }
+    });
+
+    var checkbox_toggle1 = document.getElementById('light-dark1');
+    checkbox_toggle1.addEventListener('change', function(){
+        Auto = Auto==1?0:1;
+        if(Auto==1){
+            checkbox_toggle.disabled = true;
+            checkbox_toggle2.disabled = true;
+            checkbox_toggle3.disabled = true;
+            checkbox_toggle4.disabled = true;
+            checkbox_toggle5.disabled = true;
+        }
+        else{
+            checkbox_toggle.disabled = false;
+            checkbox_toggle2.disabled = false;
+            checkbox_toggle3.disabled = false;
+            checkbox_toggle4.disabled = false;
+            checkbox_toggle5.disabled = false;
+        }
+        console.log("Auto: " +String(Auto));
+        client.publish("Chedo", "0" + String(Auto));
+    });
+
+    var checkbox_toggle2 = document.getElementById('light-dark2');
+    checkbox_toggle2.addEventListener('change', function (){
+        document.body.classList.toggle('dark2');
+        // checktime[0] = 1;
+        if(checkbox_toggle2.checked){
+            Led[0]=1;
+            client.publish("Receive1", String(Led[0]) + String(Led[1]) + String(Led[2]) + String(Led[3]));
+        }else{
+            Led[0]=0;
+            client.publish("Receive1", String(Led[0]) + String(Led[1]) + String(Led[2]) + String(Led[3]));
+        }
+        if(Led[0] == 1 && Led[1] == 1 && Led[2]==1 && Led[3] == 1){
+            checkbox_toggle.checked=true;
+        }
+        else{
+            checkbox_toggle.checked=false;
+        }
+    });
+
+    var checkbox_toggle3 = document.getElementById('light-dark3');
+    checkbox_toggle3.addEventListener('change', function (){
+        // checktime[1] = 1;
+        document.body.classList.toggle('dark3');
+        Led[1]=checkbox_toggle3.checked==true?1:0;
+        client.publish("Receive1", String(Led[0]) + String(Led[1]) + String(Led[2]) + String(Led[3]));
+        if(Led[0] == 1 && Led[1] == 1 && Led[2]==1 && Led[3] == 1){
+            checkbox_toggle.checked=true;
+        }
+        else{
+            checkbox_toggle.checked=false;
+        }
+    });
+    
+    var checkbox_toggle4 = document.getElementById('light-dark4');
+    checkbox_toggle4.addEventListener('change', function (){
+        // checktime[2] = 1;
+        document.body.classList.toggle('dark4');
+        Led[2]=checkbox_toggle4.checked==true?1:0;
+        client.publish("Receive1", String(Led[0]) + String(Led[1]) + String(Led[2]) + String(Led[3]));
+        if(Led[0] == 1 && Led[1] == 1 && Led[2]==1 && Led[3] == 1){
+            checkbox_toggle.checked=true;
+        }
+        else{
+            checkbox_toggle.checked=false;
+        }
+    });
+    
+    var checkbox_toggle5 = document.getElementById('light-dark5');
+    checkbox_toggle5.addEventListener('change', function (){
+        // checktime[3] = 1;
+        document.body.classList.toggle('dark5');
+        Led[3]=checkbox_toggle5.checked==true?1:0;
+        client.publish("Receive1", String(Led[0]) + String(Led[1]) + String(Led[2]) + String(Led[3]));
+        if(Led[0] == 1 && Led[1] == 1 && Led[2]==1 && Led[3] == 1){
+            checkbox_toggle.checked=true;
+        }
+        else{
+            checkbox_toggle.checked=false;
+        }
+    });
+    
+    function checkw(){
+        for(var i=0; i<=4;i++){
+            if(checktime[i] == 1){
+                time[i]++;
+                if(time[i]>=4){
+                    checktime[i] = 0;
+                    time[i] = 0;
+                }
+            }
+        }
+    }
+
+    setInterval(function(){checkw();}, 500);
+    </script>
+    </div>
+</body>
+</html>
