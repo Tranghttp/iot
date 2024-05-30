@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="btl.css">
     <title>Đèn Đường Thông Minh</title>
 </head>
 <body>
@@ -423,9 +423,9 @@
         var Led =[0, 0, 0, 0], allLed=0, checkall = 0, checktime=[0, 0, 0, 0, 0], time=[0, 0, 0, 0, 0];
         var Auto = 1;
          var checkbox_toggle = document.getElementById('light-dark1');
-         var client = mqtt.connect("wss://f5ea15390c3e435a9f80a6a22bbca798.s1.eu.hivemq.cloud:8884/mqtt", {
-        username: "tranghttp",
-        password: "Trangvu1203"
+         var client = mqtt.connect("wss://471f6fd8b1994cfd93c0756832b91237.s1.eu.hivemq.cloud:8884/mqtt", {
+        username: "cuongiot",
+        password: "t265432q"
     });
     console.log(checkbox_toggle = document.getElementById('light-dark1').checked)
     client.subscribe("CBQuang");
@@ -498,16 +498,6 @@
             }
         }
     });
-
-    // function updateButtonState(payload) {
-    //     if (payload == "1") {
-    //         checkbox_toggle.checked = true;
-    //         document.body.classList.add('dark1');
-    //     } else if (payload === "0") {
-    //         checkbox_toggle.checked = false;
-    //         document.body.classList.remove('dark1');
-    //     }
-    // }
     var checkbox_toggle = document.getElementById('light-dark');
     console.log(checkbox_toggle);
     checkbox_toggle.addEventListener('change', function (){
